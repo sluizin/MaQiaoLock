@@ -235,7 +235,7 @@ public final class Consts {
 	 * @return Double
 	 */
 	static final Double getIdentity(final Field field, final Object obj) {
-		return Identity.get(obj, field);
+		return Constants.getIdentityHashCode(obj, field);
 		//return System.identityHashCode(reflectionFactory.newFieldAccessor(field, false).get(obj));
 	}
 
